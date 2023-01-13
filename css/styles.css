@@ -15,6 +15,30 @@ body {
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container{
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
 .list {
   list-style: none;
 }
@@ -36,26 +60,30 @@ body {
   margin: -1px;
 }
 
-.section-title{
+.section-title {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
-.section-suptitle{
+.section-suptitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.section-text{
+.section-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
 
 /* ----------------- HEADER ---------------------- */
+
+.header {
+padding-top: 24px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -99,6 +127,8 @@ body {
 
 .hero {
   background-color: var(--navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -122,14 +152,30 @@ body {
 
 /* ----------------- ADVANTAGES ---------------------- */
 
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ----------------- DOING ---------------------- */
 
+.doing {
+  padding-bottom: 120px;
+}
+
 /* ----------------- TEAM ---------------------- */
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* ----------------- FOOTER ---------------------- */
 
 .footer {
   background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway";
