@@ -43,6 +43,11 @@ img {
   /* outline: 2px solid tomato; */
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .list {
   list-style: none;
 }
@@ -85,7 +90,7 @@ img {
 
 /* ----------------- HEADER ---------------------- */
 
-.container-navigation {
+.header-navigation {
   display: flex;
   align-items: center;
 }
@@ -95,12 +100,13 @@ img {
   padding-bottom: 24px;
 }
 
-.header-navigation {
+.nav {
   display: flex;
   align-items: center;
 }
 
 .header-logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -113,7 +119,6 @@ img {
 
 .header-logo-right {
   color: var(--navy-blue);
-  margin-right: 76px;
 }
 
 .header-list {
@@ -158,8 +163,6 @@ img {
 
 .hero {
   background-color: var(--navy-blue);
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 .hero-title {
   max-width: 500px;
@@ -198,15 +201,13 @@ img {
 
 /* ----------------- ADVANTAGES ---------------------- */
 
-.advantages {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .advantages-list {
   display: flex;
-  min-width: 264px;
   gap: 24px;
+}
+
+.advantages-item {
+  min-width: 264px;
 }
 
 .section-suptitle-advantages {
@@ -232,8 +233,6 @@ img {
 /* ----------------- TEAM ---------------------- */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background: var(--cloud);
 }
 
@@ -252,6 +251,8 @@ img {
   padding-bottom: 32px;
   background: var(--white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* ----------------- FOOTER ---------------------- */
@@ -288,14 +289,12 @@ img {
 
 .filter {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .filter-btn-list {
   display: flex;
   align-items: center;
-  padding-bottom: 72px;
-  margin: 0 auto;
+  margin-bottom: 72px;
   justify-content: center;
   gap: 24px;
 }
@@ -322,16 +321,21 @@ img {
 
 /* ----------------- PROJECT ---------------------- */
 
-.list-portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  /* flex-basis: calc((100% - 48px) / 3); */
+}
+
+.portfolio-items {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .list-portfolio-item {
   padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   border-top: none;
   border-left: 1px solid var(--cornflover);
   border-right: 1px solid var(--cornflover);
@@ -340,8 +344,4 @@ img {
 
 .section-suptitle-portfolio {
   margin-bottom: 8px;
-}
-
-.section-text-portfolio {
-  margin-bottom: 32px;
 }
