@@ -70,6 +70,9 @@ img {
 }
 
 .section-title {
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  text-align: center;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -80,9 +83,13 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .section-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
@@ -203,6 +210,10 @@ img {
 
 /* ----------------- ADVANTAGES ---------------------- */
 
+.advantages {
+  padding-bottom: 0px;
+}
+
 .advantages-list {
   display: flex;
   gap: 24px;
@@ -217,11 +228,6 @@ img {
 }
 
 /* ----------------- DOING ---------------------- */
-
-.section-title {
-  margin-bottom: 72px;
-  text-align: center;
-}
 
 .list-doing {
   display: flex;
@@ -239,9 +245,9 @@ img {
   gap: 24px;
 }
 
-.section-suptitle-team {
+/* .section-suptitle-team {
   margin-bottom: 8px;
-}
+} */
 
 .team-content {
   text-align: center;
@@ -338,8 +344,4 @@ img {
   border-left: 1px solid var(--cornflover);
   border-right: 1px solid var(--cornflover);
   border-bottom: 1px solid var(--cornflover);
-}
-
-.section-suptitle-portfolio {
-  margin-bottom: 8px;
 }
